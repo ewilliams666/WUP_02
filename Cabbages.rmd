@@ -59,6 +59,12 @@ In this graph we can see that the average amount of Vitamin C produced by cultiv
 
 <!--State hypothesis clearly.  Make sure your discussion of the inferential test covers all the aspects that the test output produces, such as test statistic, p-value etc.  Make a decision about the null hypothesis, explain the assumptions on which the selected test/procedure was based, and why the chosen procedure satisfys the assumptions and is appropriate to answer the research question!-->
 
+```{r}
+t.test(VitC~Cult,data=veggy)
+```
+
+The p-value is 0.00000003405. The chances of a differing result are nearly impossible based on the p-value. This means that we can reject the null hypothesis since the probability is so small.   
+
 
 # Discussion and Conclusion
 
