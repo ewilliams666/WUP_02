@@ -40,6 +40,7 @@ We are explaining the numerical variable of vitamin C content by evaluating the 
 boxplot(VitC~Cult,data=veggy)
 ```
 
+Here we have a graph showing the different cultivation methods and the difference in the amount of Vitamin C they produce. While we can see the c52 is producing a larger amount of Vitamin C it does not necessarily mean that it is the most effecient method. We will not know until we perform a t-test.  
 
 
 <!--Graphical results here.  Make sure to show your code.  Provide appropriate labels for axes, giving units if possible, and provide a good title for the graph, too.  Use the graphical results to describe the patterns if any that exist in the data as focused toward the research question!-->
@@ -47,6 +48,12 @@ boxplot(VitC~Cult,data=veggy)
 ### Numerical Descriptive Results
 
 <!--Numerical results go here. Use the numerical results to describe the patterns if any that exist in the data as focused toward the research question!-->
+```{r}
+favstats(VitC~Cult,data=veggy)
+```
+
+In this graph we can see that the average amount of Vitamin C produced by cultivation method c52 is 64.4. The average amount of Vitamin C produced by cultivation method c39 is is 51.5. Based on this data it seems that cultivation method c52 is more reliable in producing higher amounts of Vitamin C.  
+
 
 ## Inferential Results
 
